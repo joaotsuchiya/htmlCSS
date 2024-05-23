@@ -1,0 +1,96 @@
+HTML & CSS
+---------------------------------------------------------------------------------------------------
+HTML - Linguagem de marcação;
+Utilização: estruturação de página web, criar elemento, inserir imagens, lista e formulários;
+É o esqueleto da web; estruturação da página;
+Não precisa de software, apenas arquivo.html
+---------------------------------------------------------------------------------------------------
+CSS - Linguagem de estilização;
+Interação com HTML - aplicado ao HTML;
+Adicionar cor, mudar tamanho, borda e etc
+---------------------------------------------------------------------------------------------------
+Estrutura da tag (normal) -> <> -> <'nome da tag'> -> <nome da tag> inicio </nome da tag> final
+
+<html> </html> (Envolve todo o proejto para que o navagador entenda que é HTML)
+
+<head>Configuraçõs / Aquilo que não vemos</head> 
+<body> Corpo na web / Aquilo que é visto </body>
+
+Estrutura da tag (com atributo) -> <> -> <'nome da tag'> -> <nome da tag> inicio </nome da tag> final
+	Com atributos: <'nome da tag' 'nome do atributo'='valor do atributo'></'nome da tag>
+
+Estrutura da tag (com fechamento) -> <> -> <'nome da tag' /> (pode ter atributo)
+
+Estrutura da tag img -> <img scr = "" alt="" /> (Nome do atributo-diretorio da imagem-acessibilidade_
+descrição da imagem)
+---------------------------------------------------------------------------------------------------
+Três maneiras de coloca CSS em HTML:
+
+no body: <tag style "tagStyle=valor" />
+
+no head: <style> 'tags a serem estilizadas'{ atributos=valores; } <style />
+
+em outro arquivo: gerar arquivo.css -> head -> <link rel="stylesheet" href="diretorio do arquivo" />
+---------------------------------------------------------------------------------------------------
+Tag <div></div> (Elemento pai, para encapsular)
+---------------------------------------------------------------------------------------------------
+Estrutura tabela: (dentro do body)
+<table> <thead> configurações <tr> colunas <th> nome das colunas </th> </tr> </thead>
+	<tbody> apresentação das informações <tr> linhas <td> conteúdo </td> </tr> >/tbody> 
+</table>
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+CSS
+---------------------------------------------------------------------------------------------------
+Colocar estilo por ID:
+<tag id="nome do id"></tag> (.HTML) -> #title { configuração} (.CSS)
+---------------------------------------------------------------------------------------------------
+Colocar estilo por classes:
+<tag class="nome da class"></tag> (.HTML) -> .class { configuração) (.CSS)
+---------------------------------------------------------------------------------------------------
+Box Model
+Todo elemento do HTML tem
+altura x largura x padding x border x margin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

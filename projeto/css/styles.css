@@ -1,0 +1,271 @@
+/* -----------------------Regras Gerais----------------------- */
+
+/* * Configuração da página toda / Tira todas as configurações e permite a manupulação item a idem */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+/* Permite o display ficar em linha / Flex da mais possibilidades / flex-wrap:warp (quebra de linha, torna responsivo - mobile) */
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -----------------------Regras Especificas----------------------- */
+
+/* Apresentação do evento */
+
+/* div pai / flex: 1.4 - Lado esquerdo 40% maior / rem usado para medidas responsivas - unico padding para todas as bordas */
+#about-container {
+    flex: 1.4;
+    padding: 2rem 4rem;
+}
+
+/* display flex coloca os itens do lado / alinhamento do item vai alinhar com os demais itens / font diminui o tamanho */
+#brand {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* deixa o texto todo maiusculo / muda a cor pra azul / torna o texto em negrito / tamanho e margem do texto */
+#exclusive {
+    text-transform: uppercase;
+    color: #0075ff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* aumenta o tamanho da fonte / coloca uma regra até onde o texto pode ir / cria uma margem abaixo */
+#about-container h2 {
+    font-size: 2.4rem;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+/* torna o texto maiusculo / mudar a cor / deixa um espaçamento com o item abaixo */
+#date {
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+/* deixa o texto com uma largura maior / espaçamento com o item abaixo / aumenta o espaço entre linhas */
+#description {
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+/* aumenta o tamanho da fonte / espaçamento com o item abaixo */
+#about-container h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* deixa os itens em linha / deixa o display responsivo / cria uma margem */
+#user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* cria uma borda em forma solida de cor cinza / cria um espaço entre a margem e a figura / tamanho da imagem e alinhamento */
+.user-card {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+}
+
+/* formatação do tamanho da imagem / da um arredondamento da imagem */
+.user-card img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* texto em negrito / espaçamento abaixo */
+.user-card .user-name {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+
+}
+
+/* mudar a cor do texto / diminui a fonte */
+.user-card .user-role {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+
+
+/* diminui o logo / descola o logo do texto */
+#brand img {
+    height: 50px;
+    margin-right: 0.6rem;
+}
+
+
+
+/* Formulário */
+
+/* deixa o conteúdo com 100% da tela tirando a parte body / adiciona imagem de fundo  */
+/* deixa a imagem de fundo inteira no espaço / cor da fonte  */
+#form-container {
+    flex: 1;
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    color: #fff;
+}
+
+/* cria um quadrado / adiciona margem ao quadrado do formulário / textos centralizados / elementos em linha */
+/* elementos em colunas / alinhamento dentro do container*/
+#form-inner {
+    margin: 3rem;
+    padding: 3rem;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* aumenta tamanho da fonte / espaçamento abaixo */
+#form-inner h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* espaçamento abaixo */
+#form-inner p {
+    margin-bottom: 1rem;
+}
+
+/* elementos em linha / elementos em coluna / espaço entre linha / espaço abaixo */
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* elementos em linha / espaço entre linhas */
+#name-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* configura a box dos elementos / tira a borda / arredonda a borda da box */
+#register-form input {
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+
+#email {
+    min-width: 100%;
+}
+
+/* puxa um elemento especifico dentro de uma div dentro de um elemento / muda a cor do fundo / coloca uma borda e configura ela  */
+/* aumenta a fonte / deixa a fonte em maiusculo / coloca transição no cursor ao passar no campo / o tempo pra transição acontecer */
+#register-form input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* puxa um elemento especifico dentro de uma div dentro de um elemento / coloca a função de transição / coloca cor na transição */
+#register-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #0075ff;
+}
+
+/* alinha o texti e coloca no inicio */
+#benefits {
+    text-align: left;
+    align-self: start;
+}
+
+/* aumenta o texto e coloca espaço  */
+#benefits h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* muda a regra de posição da lista */
+#benefits ul {
+    list-style-position: inside;
+}
+
+/* espaçamento */
+#benefits li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 450px) {
+    body {
+        flex-direction: column;
+    }
+
+    #about-container {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    #about-container h2 {
+        font-size: 3rem;
+    }
+
+    #exclusive, #date {
+        font-size: 1.4rem;
+    }
+
+    #description {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    #user-container {
+        flex-direction: column;
+    }
+
+    .user-card {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .user-card img {
+        width: 180px;
+    }
+
+    .user-card .user-name {
+        font-size: 1.6rem;
+    }
+
+    .user-card .user-role {
+        font-size: 1.4rem;
+    }
+
+    #form-inner {
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    #register-form, #name-container {
+        gap: 1rem,
+    }
+}
+
+
